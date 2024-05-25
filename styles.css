@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+header nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 16px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px; /* Add left margin to move the content to the left */
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-row p {
+    font-weight: bold;
+    margin: 0;
+    margin-right: 10px;
+    min-width: 120px; /* Ensure enough space for "Personal Details:" */
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 120px; /* Set width for the label */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"] {
+    width: 200px;
+    padding: 6px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+p {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.checkbox-group {
+    display: flex;
+    justify-content: flex-start; /* Align checkboxes to the start */
+    flex-wrap: wrap;
+    max-width: 300px;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.personal-details {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.personal-details .form-row {
+    margin-bottom: 0; /* Remove bottom margin to avoid extra space */
+}
+
+.favorite-food .checkbox-group {
+    display: flex;
+    flex-direction: column; /* Make checkboxes appear vertically */
+}
